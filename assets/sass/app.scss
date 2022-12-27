@@ -1,0 +1,108 @@
+/*
+* ----------
+* Your style here
+* ----------
+*/
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+	font-family:sans-serif;
+	color:#333;
+	// background:#efefef;
+	font-size:3vw;
+}
+
+// Fix locomotive scroll Chrome bug Adding perspective: 1px; to data-scroll-container fixed Elements disappearing when scroll back to the top.
+.scrollContainer {
+	perspective: 1px;
+}
+
+::selection {
+    background-color:#000;
+    color:#fff;
+}
+
+.wrapper-anim, .anchors {
+    overflow: hidden;
+}
+
+.anchors {
+	margin: 10px 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    .text {
+        opacity: 0;
+    }
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    transform: translateY(100%);
+}
+
+
+.title-scroll {
+    font-size: 100px;
+    font-weight: bold;
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.link {
+    -webkit-text-decoration: underline 1px transparent;
+    text-decoration: underline 1px transparent;
+    text-decoration-thickness: 1px;
+    transition: -webkit-text-decoration-color .3s;
+    transition: text-decoration-color .3s;
+    transition: text-decoration-color .3s, -webkit-text-decoration-color .3s;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transform: translateX(-100%);
+
+    b {
+        font-weight: bold;
+    }
+}
+
+.link:hover {
+    -webkit-text-decoration-color: #070707;
+    text-decoration-color: #070707;
+}
+
+.section-image {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+}

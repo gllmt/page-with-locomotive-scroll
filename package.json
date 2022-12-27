@@ -1,0 +1,20 @@
+{
+  "name": "page_with_locomotive_scroll",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Pierre Guillemot",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "vite": "^4.0.3"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "locomotive-scroll": "^4.1.4"
+  }
+}
